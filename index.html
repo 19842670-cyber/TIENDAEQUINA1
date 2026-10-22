@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title data-es="EquiSports | Inicio" data-en="EquiSports | Home">EquiSports | Inicio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-equi sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+             EquiSports
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="google.html" data-es="Google" data-en="Google">Google</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript.html" data-es="JavaScript" data-en="JavaScript">JavaScript</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="jquery.html" data-es="jQuery" data-en="jQuery">jQuery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="json.html" data-es="JSON" data-en="JSON">JSON</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="hosting.html" data-es="Hosting" data-en="Hosting">Hosting</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="cuestionario.html" data-es="Quiz" data-en="Quiz">Quiz</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="formularo.html" data-es="Formulario" data-en="Form">formulario</a>
+                </li>
+
+                <li class="nav-item">
+                    <button id="botonIdioma" class="btn btn-light btn-sm ms-lg-2" type="button"
+                        onclick="cambiarIdioma()" aria-label="Change language">EN</button>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-light btn-sm ms-lg-2" onclick="cambiarModo()">
+                        🌙
+                    </button>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- INICIO DE SESIÓN -->
+
+<section class="login-section">
+
+    <div class="login-box">
+
+        <div class="login-logo">
+            
+        </div>
+
+        <h2 data-es="Bienvenido a EquiSports" data-en="Welcome to EquiSports">Bienvenido a EquiSports</h2>
+
+        <p data-es="Inicia sesión para entrar a nuestro sitio." data-en="Sign in to enter our website.">Inicia sesión para entrar a nuestro sitio.</p>
+
+        <input type="text" id="usuario" class="form-control mb-3"
+            placeholder="Usuario" data-placeholder-es="Usuario" data-placeholder-en="Username">
+
+        <input type="password" id="password" class="form-control mb-3"
+            placeholder="Contraseña" data-placeholder-es="Contraseña" data-placeholder-en="Password">
+
+        <button class="btn btn-equi w-100" onclick="iniciarSesion()">
+            <span data-es="Iniciar sesión" data-en="Sign in">Iniciar sesión</span>
+        </button>
+
+        <p id="mensajeLogin" class="mt-3"></p>
+
+    </div>
+
+</section>
+
+
+<!-- CARRUSEL -->
+
+<section class="container mt-5">
+
+    <div id="carouselEqui" class="carousel slide carousel-fade"
+        data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+
+            <button type="button" data-bs-target="#carouselEqui"
+                data-bs-slide-to="0" class="active"></button>
+
+            <button type="button" data-bs-target="#carouselEqui"
+                data-bs-slide-to="1"></button>
+
+            <button type="button" data-bs-target="#carouselEqui"
+                data-bs-slide-to="2"></button>
+
+        </div>
+
+        <div class="carousel-inner rounded-4 shadow">
+
+            <div class="carousel-item active">
+
+                <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1600&q=85"
+                    class="d-block w-100 carousel-img">
+
+                <div class="carousel-caption">
+                    <h2 data-es="El mundo de los caballos" data-en="The world of horses">El mundo de los caballos</h2>
+                    <p data-es="Pasión, cuidado y tecnología." data-en="Passion, care, and technology.">Pasión, cuidado y tecnología.</p>
+                </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img src="https://images.unsplash.com/photo-1598974357801-cbca100e65d3?auto=format&fit=crop&w=1600&q=85"
+                    class="d-block w-100 carousel-img">
+
+                <div class="carousel-caption">
+                    <h2 data-es="Equitación" data-en="Horse riding">Equitación</h2>
+                    <p data-es="Una combinación entre caballo y jinete." data-en="A partnership between horse and rider.">Una combinación entre caballo y jinete.</p>
+                </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <img src="https://images.unsplash.com/photo-1551884831-bbf3cdc6469e?auto=format&fit=crop&w=1600&q=85"
+                    class="d-block w-100 carousel-img">
+
+                <div class="carousel-caption">
+                    <h2>EquiSports</h2>
+                    <p data-es="Conoce nuestros productos y tecnologías." data-en="Discover our products and technology.">Conoce nuestros productos y tecnologías.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselEqui" data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselEqui" data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- PRESENTACIÓN -->
+
+<section class="container py-5">
+
+    <div class="text-center">
+
+        <h1 class="titulo" data-es="Bienvenido a EquiSports" data-en="Welcome to EquiSports">Bienvenido a EquiSports</h1>
+
+        <p class="texto-principal" data-es="EquiSports es un sitio web dedicado al mundo de los caballos, la equitación y la tecnología. Aquí podrás conocer productos ecuestres y aprender sobre diferentes herramientas utilizadas en el desarrollo web." data-en="EquiSports is a website dedicated to horses, riding, and technology. Here you can explore equestrian products and learn about different tools used in web development.">
+            EquiSports es un sitio web dedicado al mundo de los caballos,
+            la equitación y la tecnología. Aquí podrás conocer productos
+            ecuestres y aprender sobre diferentes herramientas utilizadas
+            en el desarrollo web.
+        </p>
+
+    </div>
+
+
+    <div class="row g-4 mt-3">
+
+        <div class="col-md-4">
+
+            <div class="card equi-card h-100">
+
+                <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=900&q=80"
+                    class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3 data-es="Caballos" data-en="Horses"> Caballos</h3>
+
+                    <p data-es="Información y contenido relacionado con el mundo equino." data-en="Information and content about the equestrian world.">
+                        Información y contenido relacionado con el mundo
+                        equino.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card equi-card h-100">
+
+                <img src="https://images.unsplash.com/photo-1551884831-bbf3cdc6469e?auto=format&fit=crop&w=900&q=80"
+                    class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3 data-es="Equitación" data-en="Horse riding"> Equitación</h3>
+
+                    <p data-es="Conoce diferentes aspectos relacionados con la práctica ecuestre." data-en="Explore different aspects of equestrian practice.">
+                        Conoce diferentes aspectos relacionados con la
+                        práctica ecuestre.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card equi-card h-100">
+
+                <img src="https://images.unsplash.com/photo-1598974357801-cbca100e65d3?auto=format&fit=crop&w=900&q=80"
+                    class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3 data-es="Tecnología" data-en="Technology"> Tecnología</h3>
+
+                    <p data-es="Aprende sobre JavaScript, jQuery, JSON, hosting y otras tecnologías." data-en="Learn about JavaScript, jQuery, JSON, hosting, and other technologies.">
+                        Aprende sobre JavaScript, jQuery, JSON, hosting
+                        y otras tecnologías.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <p data-es="EquiSports © 2026 | Proyecto educativo" data-en="EquiSports © 2026 | Educational project"> EquiSports © 2026 | Proyecto educativo</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.jse" type="text/javascript"></script>
+
+</body>
+</html>
